@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fff;
+    color: #111;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back {
+    background-image: url("nQt9vcrwRwma7eR7nENz_jnipb6O2VCdjm68k.png");
+    height: 200px;
+    background-size: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .back {
+        height: 150px;
+    }
+    .ss {
+        margin-top: -19px;
+    }
+    
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    max-width: 600px;
+    margin: -91px auto 100px auto;
+}
+
+.icon1 {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    font-size: 24px;
+    border-radius: 4px;
+    z-index: 2000;
+}
+
+.img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 29px;
+    border-radius: 100%;
+    margin-top: 30px;
+    border: 10px solid #fff;
+
+
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.ss {
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.aaa {
+    margin-bottom: 7px;
+}
+
+.card {
+    position: relative; /* أضف هذا السطر */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #845f42;
+    padding: 19px 20px 19px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #583d29a1;
+    border-radius: 4px;
+    transition: width 5s ease; /* إضافة تأثير التحويلاً */
+    display: block; /* تغيير عرض العنصر للظهور */
+    
+}
+
+.card:hover::before {
+    width: 100%;
+    transition: 0.8s;
+}
+
+
+
+
+
+.icon {
+    font-size: 20px;
+}
+
+
+.cardtext {
+    z-index: 1000;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #222;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+
+.show-menu {
+    display: flex;
+}
+
+
+.iconso {
+    color: #fff.09;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-top: 10px;
+    
+}
+
+.so {
+    display: flex;
+    justify-content: center; /* توسيط العناصر الفرعية أفقيا */
+    gap: 15px; /* مسافة بين العناصر */
+    align-items: center; /* توسيط العناصر الفرعية رأسيا */
+
+    margin-bottom: 28px;
+}
